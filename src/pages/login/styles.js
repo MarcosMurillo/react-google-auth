@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { darken } from "polished";
+import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   min-height: 100%;
@@ -70,12 +70,16 @@ export const Content = styled.div`
       transition: background 0.2s;
 
       &:hover:not([disabled]) {
-        background: ${darken(0.08, "#7159c1")};
+        background: ${darken(0.08, '#7159c1')};
       }
 
       &:disabled {
         opacity: 0.6;
         cursor: not-allowed;
+      }
+
+      .google-account {
+        margin-right: 1rem;
       }
     }
   }
