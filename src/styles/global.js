@@ -1,18 +1,46 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
-  *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    outline:0;
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
   }
-  body{
-    background: #FFF;
-    text-rendering:optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    font-family: 'Roboto',  Arial, Helvetica, sans-serif;;
+
+  *:focus {
+    outline: 0;
+  }
+
+  body, html, #root {
+    height: 100%;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body, input, button, textarea {
+    font: 14px 'Roboto', sans-serif;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+  }
+
+  input {
+    border: none;
   }
 `;
 
