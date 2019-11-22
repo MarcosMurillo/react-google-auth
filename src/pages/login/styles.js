@@ -19,7 +19,7 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  h1 {
+  span {
     color: #fff;
     max-width: 250px;
     font-size: 40px;
@@ -28,70 +28,34 @@ export const Content = styled.div`
     text-align: center;
   }
 
-  form {
+  button {
     display: flex;
-    flex-direction: column;
-    width: 315px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #7159c1;
+    border: 0;
+    border-radius: 4px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.2s;
+    width: 200px;
 
-    input {
-      margin-bottom: 15px;
-      padding-left: 20px;
-      border: 0;
-      border-radius: 4px;
-      height: 50px;
-      font-size: 18px;
-      color: #fff;
-      background: rgba(47, 46, 48, 0.4);
-
-      &::placeholder {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 18px;
-      }
+    &:hover:not([disabled]) {
+      background: ${darken(0.08, '#7159c1')};
     }
 
-    span {
-      color: #e5556e;
-      padding-bottom: 10px;
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
     }
 
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      background: #7159c1;
-      border: 0;
-      border-radius: 4px;
-      height: 50px;
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      transition: background 0.2s;
-
-      &:hover:not([disabled]) {
-        background: ${darken(0.08, '#7159c1')};
-      }
-
-      &:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-      }
-
-      .google-account {
-        margin-right: 1rem;
-      }
+    .icon{
+      margin-right: 1rem;
     }
   }
-
-  a {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 0.2s;
-
-    &:hover {
-      color: rgba(255, 255, 255, 0.8);
-    }
   }
 `;

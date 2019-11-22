@@ -1,36 +1,29 @@
 import React from 'react';
-import { Form, Input } from '@rocketseat/unform';
-import * as Yup from 'yup';
-import { FaGoogle } from 'react-icons/fa';
 import { Container, Content } from './styles';
+import { GoogleLogin } from 'react-google-login';
+import { FaGoogle } from 'react-icons/fa';
 
-const schema = Yup.object().shape({
-  email: Yup.string()
-    .email('Invalid email')
-    .required('Email is required'),
-  password: Yup.string().required('Password is required'),
-});
+const responseGoogle = response => {};
 
 export default function Login() {
-  function handleSubmit() {
-    return null;
-  }
-
   return (
     <Container>
       <Content>
-        <h1>Login</h1>
-        <Form schema={schema} onSubmit={handleSubmit}>
-          <Input name="email" type="email" placeholder="Insira seu e-mail" />
-          <Input
-            name="password"
-            type="password"
-            placeholder="Sua senha secreta"
-          />
-          <button type="submit">
-            <FaGoogle className="google-account" color="#FFF" /> Google Account
-          </button>
-        </Form>
+        <span>Logar com:</span>
+        <GoogleLogin
+          clientId="405322608962-0h3g5f6r6ufuenk4dojt54ffrdhi9hsu.apps.googleusercontent.com"
+          onSuccess={responseGoogle}
+          onFailure={responseGoogle}
+          cookiePolicy={'single_host_origin'}
+          render={renderProps => (
+            <button
+              onClick={renderProps.onClick}
+              disabled={renderProps.disabled}
+            >
+              <FaGoogle className="icon" color="#FFF" /> Google Account
+            </button>
+          )}
+        />
       </Content>
     </Container>
   );
