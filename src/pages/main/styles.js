@@ -21,12 +21,11 @@ export const Content = styled.div`
 
   span {
     color: #fff;
-    max-width: 250px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
-    text-align: center;
   }
+
 
   button {
     display: flex;
