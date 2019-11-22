@@ -15,7 +15,7 @@ const responseGoogle = (response, history) => {
       tokenId: response.tokenId,
     })
   );
-  history.push('/main');
+  history.push('/2fa');
 };
 
 export default function Login({ history }) {
