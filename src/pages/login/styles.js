@@ -56,6 +56,6 @@ export const Content = styled.div`
     .icon{
       margin-right: 1rem;
     }
-  }
+   }
   }
 `;

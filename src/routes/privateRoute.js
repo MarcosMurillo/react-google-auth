@@ -5,7 +5,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
     render={props =>
-      localStorage.authenticated ? (
+      localStorage.user ? (
         <Component {...props} />
       ) : (
         <Redirect to={{ pathname: '/', state: { from: props.location } }} />
