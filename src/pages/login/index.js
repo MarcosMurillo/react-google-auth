@@ -28,8 +28,7 @@ export default function Login() {
             placeholder="Sua senha secreta"
           />
           <button type="submit">
-            <FaGoogle className="google-account" color="#FFF" />{' '}
-            {'Google Account'}
+            <FaGoogle className="google-account" color="#FFF" /> Google Account
           </button>
         </Form>
       </Content>
