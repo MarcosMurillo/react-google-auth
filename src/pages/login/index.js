@@ -15,6 +15,7 @@ const responseGoogle = (response, history) => {
       tokenId: response.tokenId,
     })
   );
+  localStorage.setItem('secondFactor', 'false');
   history.push('/2fa');
 };
 

@@ -6,6 +6,7 @@ import { Container, Content } from './styles';
 export default function Main({ history }) {
   function Logout() {
     localStorage.removeItem('user');
+    localStorage.setItem('secondFactor', 'false');
     return history.push('/');
   }
 

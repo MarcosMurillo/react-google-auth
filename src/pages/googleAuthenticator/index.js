@@ -9,7 +9,9 @@ export default function GoogleAuthenticator({ history }) {
 
   async function handleClickValidate() {
     const response = await Authenticator.validateMethod(pin);
-    console.log(response);
+
+    if (response.data === 'True') localStorage.setItem('secondFactor', 'true');
+    history.push('/main');
   }
 
   return (
