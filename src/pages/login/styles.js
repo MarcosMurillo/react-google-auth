@@ -10,6 +10,12 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
+export const Text = styled.span`
+  color: #fafafa;
+  font-size: 30px;
+  font-weight: bold;
+`;
+
 export const Content = styled.div`
   width: 100%;
   max-width: 940px;
@@ -19,29 +25,18 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  span {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-
-
   button {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    align-items: center;
     background: #7159c1;
     border: 0;
     border-radius: 4px;
-    height: 50px;
-    color: #fff;
+    color:#fafafa;
     font-size: 18px;
     font-weight: bold;
-    transition: background 0.2s;
     width: 200px;
+    height: 50px;
 
     &:hover:not([disabled]) {
       background: ${darken(0.08, '#7159c1')};
@@ -57,4 +52,11 @@ export const Content = styled.div`
     }
    }
   }
+`;
+
+export const Line = styled.div`
+  width: 200px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;

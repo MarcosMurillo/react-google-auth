@@ -20,7 +20,7 @@ export const Content = styled.div`
   flex-direction: column;
 
   span {
-    color: #fff;
+    color: #fafafa;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -40,7 +40,7 @@ export const Content = styled.div`
     width: 320px;
     height: 50px;
     font-size: 18px;
-    color: #fff;
+    color: #fafafa;
     background: rgba(47, 46, 48, 0.4);
     text-align: center;
     margin-top: 10px;
@@ -61,7 +61,7 @@ export const Content = styled.div`
       border: 0;
       border-radius: 4px;
       height: 50px;
-      color: #fff !important;
+      color: #fafafa !important;
       font-size: 18px;
       font-weight: bold;
       transition: background 0.2s;

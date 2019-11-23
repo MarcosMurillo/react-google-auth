@@ -4,14 +4,20 @@ import Authenticator from '../../services/AuthenticatorController';
 import { Container, Content } from './styles';
 
 export default function GoogleAuthenticator({ history }) {
+  const [pin, setPin] = useState('');
   const appInfo = JSON.parse(localStorage.user).fullName;
-  const [pin, setPin] = useState();
 
   async function handleClickValidate() {
     const response = await Authenticator.validateMethod(pin);
+    if (pin === '') return alert('Informe o código do google authenticator');
 
-    if (response.data === 'True') localStorage.setItem('secondFactor', 'true');
-    history.push('/main');
+    if (response.data === 'True') {
+      localStorage.setItem('secondFactor', 'true');
+      history.push('/main');
+    } else {
+      alert('Código inválido');
+      setPin('');
+    }
   }
 
   return (
@@ -19,8 +25,8 @@ export default function GoogleAuthenticator({ history }) {
       <Content>
         <span>Validação Google Authenticator</span>
         <iframe
+          title="QRauth"
           src={`http://www.authenticatorApi.com/pair.aspx?AppName=ReactApp&AppInfo=${appInfo}&SecretCode=ReactApp299`}
-          alt="QRauth"
         />
         <input
           type="text"
