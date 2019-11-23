@@ -20,7 +20,21 @@ const Routes = () => (
         )
       }
     />
-    <Route path="/2fa" component={GoogleAthenticator} />
+    <Route
+      exact
+      path="/2fa"
+      render={props =>
+        localStorage.secondFactor && localStorage.secondFactor === 'true' ? (
+          <Redirect
+            to={{ pathname: '/main', state: { from: props.location } }}
+          />
+        ) : (
+          <GoogleAthenticator {...props} />
+        )
+      }
+    />
+
+    {/* <Route path="/2fa" component={} /> */}
     <PrivateRoute path="/main" component={Main} />
   </Switch>
 );

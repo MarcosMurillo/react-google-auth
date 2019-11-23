@@ -19,7 +19,7 @@ export default function Main({ history }) {
     <Container>
       <Header>
         <Text>
-          {`Olá ${firstName}, vôce está autenticado com sua conta Google`}{' '}
+          {`Olá ${firstName}, vôce se autenticou com sua conta Google`}{' '}
         </Text>
         <GoogleLogout
           clientId="405322608962-0h3g5f6r6ufuenk4dojt54ffrdhi9hsu.apps.googleusercontent.com"
