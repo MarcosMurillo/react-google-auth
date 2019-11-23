@@ -26,7 +26,7 @@ export default function GoogleAuthenticator({ history }) {
         <span>Validação Google Authenticator</span>
         <iframe
           title="QRauth"
-          src={`http://www.authenticatorApi.com/pair.aspx?AppName=ReactApp&AppInfo=${appInfo}&SecretCode=ReactApp299`}
+          src={`https://www.authenticatorApi.com/pair.aspx?AppName=ReactApp&AppInfo=${appInfo}&SecretCode=ReactApp299`}
         />
         <input
           type="text"
