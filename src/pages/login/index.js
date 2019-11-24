@@ -11,8 +11,6 @@ const responseGoogle = (response, history) => {
       firstName: response.profileObj.givenName,
       email: response.profileObj.email,
       avatar: response.profileObj.imageUrl,
-      googleId: response.profileObj.googleId,
-      tokenId: response.tokenId,
     })
   );
   localStorage.setItem('secondFactor', 'false');
