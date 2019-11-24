@@ -65,7 +65,7 @@ export const User = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 450px;
   height: 350px;
   border-radius: 10px;
@@ -118,7 +118,7 @@ export const Project = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 20px;
   width: 700px;
   height: 100%;
