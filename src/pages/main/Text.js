@@ -1,15 +1,13 @@
 export const frameWork = `
-  O escolhido foi o React, 
-  sabemos que é apenas uma biblioteca, porem com todo o ecossistema em volta dessa tecnologia, 
-  já podemos considera-lo um framework.
-  O motivo da escolha é porque alem de sem uma tecnologia atual, consistente, performatica, 
-  muitas empresas de ponta então usando tal ferramenta para desenvolver seus softwares, 
-  pois com React é possivel colocar um projeto para rodar um pouco tempo 
-  e foi muito bem aceita pela comunidade de desenvolvedores.`;
+  O escolhido foi o React, sabemos que é apenas uma biblioteca, porém com todo o ecossistema em volta dessa tecnologia, 
+  logo se pode considerar o mesmo como um framework. 
+  O motivo de tal escolha é porque além de ser uma ferramenta atual, consistente, performática e de fácil aprendizado, 
+  empresas de ponta então o adotando para desenvolver projetos, 
+  com React é possível colocar uma aplicação para rodar um pouco tempo e foi muito bem aceita pela comunidade de desenvolvedores.`;
 
 export const styledComponents = `
-  Utilizei esta biblioteca propriamente desenvolvida para React e ReactNative,
-  pelo fato de poder aplicar o conceito de componentização, e manipular algumas propriedadas via javaScript.
+  Foi utilizado essa biblioteca propriamente desenvolvida para React e React Native, 
+  pelo fato de poder aplicar o conceito de componentização, e manipular algumas propriedades via javaScript.
  `;
 
 export const reactGoogleLogin = `
@@ -17,7 +15,7 @@ export const reactGoogleLogin = `
   para conseguir realizar o login na aplicação utilizando uma conta Google.`;
 
 export const authenticatorApi = `
-  Foi utilizado esta API como segundo fator de autenticação atravez do aplicativo do google authenticator .`;
+  Foi utilizado essa API, como segundo fator de autenticação atravéz do aplicativo do Google Authenticator .`;
 
 export const esLint = `
   Utilizado como ferramenta de desenvolvimento, para o projeto seguir um padrão de código.`;
